@@ -1,0 +1,93 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .searching-song {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    h3 {
+        text-shadow: 0 0 10px black;
+    }
+    
+    .songname,
+    .song-btn {
+        padding: 10px;
+        margin: 10px;
+        outline: none;
+    }
+    
+    .songname {
+        font-weight: bolder;
+    }
+    
+    .songname::placeholder {
+        font-weight: bolder;
+    }
+    
+    .display-song {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        object-fit: cover;
+        box-shadow: 0 0 5px 5px silver;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    .audiosong {
+        margin: 5px 5px;
+        padding: 5px;
+    }
+    
+    @media (min-width: 310px) and (max-width:1440px) {
+        .display-song {
+            display: flex;
+            position: absolute;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            padding: 5px;
+            place-content: center;
+            top: 25%;
+        }
+        .content {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            object-fit: cover;
+            box-shadow: 0 0 5px 5px silver;
+            margin: 10px;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        .searching-song {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            place-content: center;
+            margin: 10px;
+        }
+    }
